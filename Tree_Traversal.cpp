@@ -3,6 +3,8 @@
 #include <math.h>
 #include <vector>
 #include <sstream>
+#include <time.h>
+#include <stdlib.h>
 #define RESET   "\033[0m"
 #define RED     "\033[31m"      /* Red */
 #define BOLDRED     "\033[1m\033[31m"      /* Bold Red */
@@ -151,7 +153,7 @@ class Tree{
 					}
 				}
 				else{
-					if(temp[i].str().size()-(bgr*13)-del+6+8+ndigits(i)<=75){ temp[i]<<"NULL | ";}
+					if(temp[i].str().size()-(bgr*13)-del+4+8+ndigits(i)<=75){ temp[i]<<"NULL | ";}
 					else{
 						temp[i]<<endl;
 						for(int l=0; 8+ndigits(i)>l; l++) temp[i]<<" ";
@@ -173,7 +175,7 @@ class Tree{
 					}
 				}
 				else{
-					if(temp[i].str().size()-(bgr*13)-del+6+8+ndigits(i)<=75){ temp[i]<<"NULL | ";}
+					if(temp[i].str().size()-(bgr*13)-del+4+8+ndigits(i)<=75){ temp[i]<<"NULL | ";}
 					else{
 						temp[i]<<endl;
 						for(int l=0; 8+ndigits(i)>l; l++) temp[i]<<" ";
